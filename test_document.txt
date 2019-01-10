@@ -1,0 +1,65 @@
+File attached to the mail 
+
+- data.csv  Location - C:\\test\\data.csv -- Can be updated in the application.properties
+- EmployeeDataCSVBatch_demo.zip
+
+Schedular -- Updated daily at 19:15 -- from C:\\test\\data.csv 
+
+Junit - EmployeeControllerTest   http://localhost:8090/api/employees/Frank -- rest layer
+        EmployeeDataServiceTest  -- business layer
+
+RestAPI  -  Test
+
+- Get - All Employees
+ http://localhost:8090/api/employees
+
+- Get - Single Employee
+ http://localhost:8090/api/employees/Evan
+
+- Post - Create
+
+http://localhost:8090/api/employees
+
+- body 
+
+{
+	"firstName" : "Franklin",
+	"lastName" : "Becker";
+	"companyName" : "Compiuter Data",
+	"address" : "Zurich, Switzerland",
+	"city" : "Zurich",
+	"county" : "Holiday ibn",
+	"postal" : "8080",
+	"phone1" : "123456",
+	"phone2" : "123456789",
+	"email" : "franklin@franklin.com",
+	"web" : "www.franklin.com"
+
+}		   
+
+- Put - Update
+
+
+http://localhost:8090/api/employees
+
+- body 
+
+{
+	"firstName" : "Franklin",
+	"lastName" : "Becker_updated";
+	"companyName" : "Compiuter Data",
+	"address" : "Zurich, Switzerland",
+	"city" : "Zurich",
+	"county" : "Holiday ibn",
+	"postal" : "8080",
+	"phone1" : "123456",
+	"phone2" : "123456789",
+	"email" : "franklin@franklin.com",
+	"web" : "www.franklin.com"
+
+}		   
+
+
+- Delete 
+
+ttp://localhost:8090/api/employees/Evan
